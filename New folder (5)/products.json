@@ -1,0 +1,229 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Burger",
+        "price": 599,
+        "type": "burger",
+        "description": "A classic beef burger with lettuce, tomato, and cheese.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 2,
+        "name": "Vegetarian Burger",
+        "price": 499,
+        "type": "burger",
+        "description": "A delicious veggie burger with lettuce, tomato, and special sauce.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 3,
+        "name": "Bacon Cheeseburger",
+        "type": "burger",
+        "price": 799,
+        "description": "A hearty bacon-infused burger with cheese, lettuce, and tomato.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 4,
+        "name": "Spicy Chicken Burger",
+        "type": "burger",
+        "price": 649,
+        "description": "A spicy chicken patty with lettuce, tomato, and jalapeno mayo.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 5,
+        "name": " chilled Coke",
+        "type": "drink",
+        "price": 649,
+        "description": "A refreshing Coca-Cola.",
+        "image": "images/coke.png"
+    },
+    {
+        "id": 6,
+        "name": "Spicy Chicken Burger",
+        "type": "burger",
+        "price": 649,
+        "description": "Another version of the spicy chicken burger with lettuce, tomato, and jalapeno mayo.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 7,
+        "name": "Peri Peri Fries",
+        "type": "fries",
+        "price": 649,
+        "description": "Crispy fries seasoned with peri peri spices.",
+        "image": "images/fries.png"
+    },
+    {
+        "id": 8,
+        "name": "Classic Burger",
+        "price": 599,
+        "type": "burger",
+        "description": "A classic beef burger with lettuce, tomato, and cheese.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 9,
+        "name": "Vegetarian Burger",
+        "price": 499,
+        "type": "burger",
+        "description": "A delicious veggie burger with lettuce, tomato, and special sauce.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 10,
+        "name": "Bacon Cheeseburger",
+        "type": "burger",
+        "price": 799,
+        "description": "A hearty bacon-infused burger with cheese, lettuce, and tomato.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 11,
+        "name": "Spicy Chicken Burger",
+        "type": "burger",
+        "price": 649,
+        "description": "A spicy chicken patty with lettuce, tomato, and jalapeno mayo.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 12,
+        "name": " chilled Coke",
+        "type": "drink",
+        "price": 649,
+        "description": "A refreshing Coca-Cola.",
+        "image": "images/coke.png"
+    },
+    {
+        "id": 13,
+        "name": "Spicy cheesy Burger ",
+        "type": "burger",
+        "price": 649,
+        "description": "Another version of the spicy chicken burger with lettuce, tomato, and jalapeno mayo.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 14,
+        "name": "Peri Peri Fries",
+        "type": "fries",
+        "price": 649,
+        "description": "Crispy fries seasoned with peri peri spices.",
+        "image": "images/fries.png"
+    },
+    {
+        "id": 15,
+        "name": "Classic Burger",
+        "price": 599,
+        "type": "burger",
+        "description": "A classic beef burger with lettuce, tomato, and cheese.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 16,
+        "name": "Vegetarian Burger",
+        "price": 499,
+        "type": "burger",
+        "description": "A delicious veggie burger with lettuce, tomato, and special sauce.",
+        "image": "images/burger.png"
+    },
+    
+    {
+        "id": 24,
+        "name": "special meal",
+        "type": "fries",
+        "price": 649,
+        "description": "Crispy fries seasoned with peri peri spices.",
+        "image": "images/meal1.png"
+    },
+    {
+        "id": 17,
+        "name": "Bacon Cheeseburger",
+        "type": "burger",
+        "price": 799,
+        "description": "A hearty bacon-infused burger with cheese, lettuce, and tomato.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 18,
+        "name": "Spicy Chicken Burger",
+        "type": "burger",
+        "price": 649,
+        "description": "A spicy chicken patty with lettuce, tomato, and jalapeno mayo.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 19,
+        "name": " chilledCoke",
+        "type": "drink",
+        "price": 649,
+        "description": "A refreshing Coca-Cola.",
+        "image": "images/coke.png"
+    },
+    {
+        "id": 20,
+        "name": "Spicy tikki burger",
+        "type": "burger",
+        "price": 649,
+        "description": "Another version of the spicy chicken burger with lettuce, tomato, and jalapeno mayo.",
+        "image": "images/burger.png"
+    },
+    {
+        "id": 24,
+        "name": "chciken meal",
+        "type": "meal",
+        "price": 649,
+        "description": "Crispy fries seasoned with peri peri spices.",
+        "image": "images/meal1.png"
+    },
+    {
+        "id": 21,
+        "name": "crunchy Fries",
+        "type": "fries",
+        "price": 649,
+        "description": "Crispy fries seasoned with peri peri spices.",
+        "image": "images/fries1.png"
+    },
+    {
+        "id": 22,
+        "name": "trie meal",
+        "type": "fries",
+        "price": 649,
+        "description": "Crispy fries seasoned with peri peri spices.",
+        "image": "images/meal1.png"
+    },
+    {
+        "id": 23,
+        "name": "paneer meal",
+        "type": "meal",
+        "price": 649,
+        "description": "Crispy fries seasoned with peri peri spices.",
+        "image": "images/meal1.png"
+    },{
+        "id": 16,
+        "name": "Vegetarian Burger",
+        "price": 499,
+        "type": "burger",
+        "description": "A delicious veggie burger with lettuce, tomato, and special sauce.",
+        "image": "images/burger.png"
+    },
+    
+    {
+        "id": 24,
+        "name": "cheese fries",
+        "type": "fries",
+        "price": 649,
+        "description": "Crispy fries seasoned with peri peri spices.",
+        "image": "images/fries.png"
+    },
+    {
+        "id": 17,
+        "name": "Bacon Cheeseburger",
+        "type": "burger",
+        "price": 799,
+        "description": "A hearty bacon-infused burger with cheese, lettuce, and tomato.",
+        "image": "images/burger.png"
+    }
+   
+    
+]

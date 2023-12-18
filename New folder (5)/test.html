@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Get every element in the array that has a type of "burger":</p>
+
+<!-- Output will be displayed here -->
+<p id="demo"></p>
+<select id="'select">
+    <option id="'option1">pepsi</option>
+    <option id="'option2">burger</option>
+</select>
+
+<script>
+    const checkdata = JSON.parse(localStorage.getItem('cart1')) || [];
+ let previousOrders = JSON.parse(localStorage.getItem('previous_order')) || [];
+
+for (let item of checkdata) {
+    previousOrders.push({
+        name: item.name,
+        price: item.price,
+        image: item.image,
+        quantity: item.quantity
+    });
+}
+
+localStorage.setItem('previous_order', JSON.stringify(previousOrders));
+console.log(previousOrders, 'previous orders');
+
+</script>
+
+</body>
+</html>

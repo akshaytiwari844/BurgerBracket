@@ -1,0 +1,116 @@
+/* -------------------------------header------------------ */
+
+    body {
+        /* background-image: url('images/gradient-dark-dynamic-lines-background_23-2148995950.avif'); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: black;
+    
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+    }
+  
+  
+  header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity: 70%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 90px; /* Adjust the height as needed */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ddd; /* Change color on hover */
+  }
+  .logo-container{
+    background-image: url('images/logo.gif'); /* Add your logo image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+h2{
+    color: aliceblue;
+    font-family: "sofia" sans-serif;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h4{
+    color: aliceblue;
+}
+.checkout_container {
+    color: rgb(246, 238, 238);
+     /* border: 0.5px solid #fff; */
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center text content within the container */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    box-shadow: -3px 2px 9px rgb(202, 227, 205);
+    border-radius: 15px;
+    margin-left: 350px;
+    position: fixed;
+    max-height: 700px; /* Set a maximum height for the scrollable div */
+    overflow-y: auto; 
+
+}
+.formfill {
+    text-align: center;
+    margin: 20px;
+}
+
+.formfill input {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: #333;
+    border: 1px solid #555;
+}
+
+.formfill button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+.orderc{
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #121010;
+  /* border: 1px solid #f0e5e5; */
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px ;
+  
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add some basic styling for the result container */
+        .result-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the image */
+        .result-image {
+            width: 50px; /* Adjust the width as needed */
+            height: 50px; /* Adjust the height as needed */
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="search"></input>
+    <button id="searchbutton">Search</button>
+
+    <div id="resultContainer"></div>
+
+    <script>
+        let fooditems = [];
+
+        // Fetch data from 'products.json' and populate the 'fooditems' array
+        fetch('products.json')
+        .then(response => response.json())
+        .then(data => {
+            fooditems = data;
+            console.log(fooditems); // Log the data to verify it's loaded correctly
+        })
+        .catch(error => console.error('Error fetching data:', error));
+
+        // Function to perform the search
+        function performSearch() {
+            const searchInput = document.getElementById('search');
+            const searchTerm = searchInput.value.toLowerCase();
+
+            // Filter fooditems based on the search term
+            const searchResults = fooditems.filter(item =>
+                item.name.toLowerCase().includes(searchTerm)
+            );
+
+            // Display search results
+            displayResults(searchResults);
+        }
+
+        // Function to display search results
+        function displayResults(results) {
+            const resultContainer = document.getElementById('resultContainer');
+            resultContainer.innerHTML = ''; // Clear previous results
+
+            // Create and append containers for each result
+            results.forEach(result => {
+                const resultDiv = document.createElement('div');
+                resultDiv.classList.add('result-container');
+
+                // Add an image element
+                const resultImage = document.createElement('img');
+                resultImage.classList.add('result-image');
+                resultImage.src = result.imageSrc; // Assuming each item object has an 'imageSrc' property
+                resultDiv.appendChild(resultImage);
+
+                // Add a text element
+                const resultText = document.createElement('p');
+                resultText.textContent = result.name;
+                resultDiv.appendChild(resultText);
+
+                resultContainer.appendChild(resultDiv);
+            });
+        }
+
+        // Attach the search function to the search button click event
+        const searchButton = document.getElementById('searchbutton');
+        searchButton.addEventListener('click', performSearch);
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="landing.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling during the overlay */
+        }
+
+        .fullscreen-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff; /* Set background color, you can also use transparent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999; /* Set a high z-index to ensure it's on top */
+        }
+
+        .fullscreen-overlay img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo Section -->
+    <section class="logo-section">
+        <div class="logo-container">
+            <!-- <img src="" alt="Company Logo"> -->
+        </div>
+    </section>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="../images/logo.gif" alt="Company Logo">
+            </div>
+            <h4>WELCOME TO [BURGER BRACKET]</h4>
+            <nav>
+                <ul>
+                    <li><a href="previousorder.html">Pastorders</a></li>
+                    <li><a href="landinpage.html">Home</a></li>
+                    <li><a href="product.html">Menu</a></li>
+                    <li><a href="cartt.html">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div>
+                <!-- Content Section -->
+                <img class="image" src="../images/burger.png" />
+                <img class="image" src="../images/coke.png" />
+                <img class="image" src="../images/burger.png" />
+                <h2>Indulge in the exquisite blend of premium spices for our</h2>
+                <h1>Burgers &amp; Fries</h1><br />
+                <button onclick="nextpage()" style="color: rgb(246, 240, 241); background-color: crimson; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px; cursor: pointer; font-size: 25px; border-radius: 10px;">Order Now</button>
+                <h2>...and savor the art of culinary craftsmanship.</h2>
+                <p>Welcome to Brackets of flavor, where patties meet their match and buns face off in the ultimate culinary showdown! Join us for the Burger Brawl Extravaganza, a thrilling journey into the world of gourmet grilling. Our top-notch chefs will go spatula to spatula, crafting mouthwatering masterpieces that redefine the art of the burger. Get ready for a taste bud adventure as we crown the champion of buns, bites, and bliss. May the best burger win in this epic grilling spectacle!</p>
+                <!-- <P>.................................................................................................................</P>
+                <P>.................................................................................................................</P>
+                <P>.................................................scroll to see our products................................................................</P>
+                <P>.................................................................................................................</P>
+                <P>.................................................................................................................</P> -->
+            </div>
+            <div class="container" id="product-container">
+                <!-- Product cards will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            // Create the fullscreen overlay
+            var overlayElement = document.createElement('div');
+            overlayElement.className = 'fullscreen-overlay';
+            var gifElement = document.createElement('img');
+            gifElement.src = '../images/logo.gif'; // Replace with the actual path to your gif
+            overlayElement.appendChild(gifElement);
+
+            // Append the overlay to the body
+            document.body.appendChild(overlayElement);
+
+            // Hide the logo-section and container after 2500 milliseconds
+            setTimeout(function () {
+                document.querySelector('.logo-section').style.display = 'none';
+                document.querySelector('.container').style.display = 'block';
+
+                // Remove the overlay element
+                document.body.removeChild(overlayElement);
+            }, 2500);
+        };
+
+        function nextpage() {
+            window.location.href = "product.html";
+        }
+    </script>
+</body>
+
+</html>

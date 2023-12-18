@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity: 0.7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    background-image: url('images/logo.gif'); /* Add your logo image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90px; /* Adjust the height as needed */
+    width: 90px; /* Add width as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd; /* Change color on hover */
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Styles for previous orders */
+.previous-order {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.previous-order h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0); /* Change color as needed */
+}
+
+.previous-order img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Add more styles as needed */
+p{
+    color:rgb(255, 255, 255)
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #070606;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #131111;
+    box-shadow: 0 0 10px rgba(221, 214, 214, 0.1);
+    border-radius: 15px;
+    max-height: 800px; /* Set a maximum height for the scrollable div */
+    overflow-y: auto; 
+}
+
+.previous-order {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #121010;
+    /* border: 1px solid #f0e5e5; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(238, 231, 231, 0.1);
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #6f6767;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555555;
+}
